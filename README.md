@@ -2,6 +2,14 @@
 
 Sistema distribuido de almacenamiento y compartición de archivos multimedia para el Centro de Computación Avanzada (CCA) de la UPB Seccional Bucaramanga. Implementado como proyecto de aula de Sistemas Distribuidos.
 
+## Overview (English)
+
+**Photo Cloud** is a distributed system for storing, streaming and sharing media files, built for UPB's Advanced Computing Center as a Distributed Systems course project. Four independent services speak different protocols over shared state: a Node.js/TypeScript REST API for media, quotas, permissions and streaming; a PHP SOAP service for user identity; a Go gRPC service for directory sync; and a React frontend. Data lives in PostgreSQL, files in S3-compatible MinIO, and the system deploys across three VMs with PowerShell scripts.
+
+**My contributions:** PostgreSQL migration with Docker, JWT authentication and session tokens, file sharing, the gRPC sync service, streaming fixes, deployment scripts and the setup guide.
+
+**Team project** with [@Willyperic0](https://github.com/Willyperic0), who built the SOAP user service.
+
 ---
 
 ## Arquitectura general
